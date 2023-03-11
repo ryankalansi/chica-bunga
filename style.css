@@ -1,0 +1,96 @@
+/* style.css */
+
+/* Set the font family and size for the entire page */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: #f9e6ea;
+  }
+  
+  /* Style the page title */
+  h1 {
+  font-size: 72px;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ff007f;
+  animation-name: slideInDown;
+  animation-duration: 1s;
+  }
+  
+  /* Style the paragraph text */
+  p {
+  font-size: 36px;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  }
+  
+  /* Style the button */
+  button {
+  background-color: #ff007f;
+  border: none;
+  color: white;
+  font-size: 48px;
+  margin: 0 auto;
+  padding: 30px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.25);
+  animation-name: bounceIn;
+  animation-duration: 1s;
+  }
+  
+  button:hover {
+  background-color: #ff1493;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  }
+  
+  /* Animation keyframes */
+  @keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+  }
+  
+  @keyframes slideInDown {
+  from {
+  transform: translateY(-100%);
+  }
+  to {
+  transform: translateY(0);
+  }
+  }
+  
+  @keyframes bounceIn {
+  from {
+  opacity: 0;
+  transform: scale(0.5);
+  }
+  to {
+  opacity: 1;
+  transform: scale(1);
+  }
+  }
+  
+  @keyframes pulse {
+  from {
+  transform: scale(1);
+  }
+  to {
+  transform: scale(1.2);
+  }
+  }
